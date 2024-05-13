@@ -7,13 +7,7 @@ public class CurrencyStrategy implements SalesStrategy {
     ProductModel productModel;
     PromoCodeModel promoCodeModel;
     StringBuilder message;
-
     Double price;
-
-    public Double getPrice() {
-        return price;
-    }
-
     public CurrencyStrategy(ProductModel productModel, PromoCodeModel promoCodeModel, StringBuilder message, Double price) {
         this.productModel = productModel;
         this.promoCodeModel = promoCodeModel;
@@ -30,6 +24,5 @@ public class CurrencyStrategy implements SalesStrategy {
     @Override
     public void doStrategy() {
         message.append(price = productModel.getRegularPrice()).append(" [currency doesn't match]");
-        ;
     }
 }

@@ -7,11 +7,7 @@ public class DefaultStrategy implements SalesStrategy{
     ProductModel productModel;
     PromoCodeModel promoCodeModel;
     StringBuilder message;
-
     Double price;
-    public Double getPrice() {
-        return price;
-    }
     public DefaultStrategy(ProductModel productModel, PromoCodeModel promoCodeModel, StringBuilder message, Double price) {
         this.productModel = productModel;
         this.promoCodeModel = promoCodeModel;

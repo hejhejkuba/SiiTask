@@ -9,13 +9,7 @@ public class ExpiredStrategy implements SalesStrategy {
     ProductModel productModel;
     PromoCodeModel promoCodeModel;
     StringBuilder message;
-
     Double price;
-
-    public Double getPrice() {
-        return price;
-    }
-
     public ExpiredStrategy(ProductModel productModel, PromoCodeModel promoCodeModel, StringBuilder message, Double price) {
         this.productModel = productModel;
         this.promoCodeModel = promoCodeModel;

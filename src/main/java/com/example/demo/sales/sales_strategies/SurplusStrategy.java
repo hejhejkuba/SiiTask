@@ -8,11 +8,6 @@ public class SurplusStrategy implements SalesStrategy {
     PromoCodeModel promoCodeModel;
     StringBuilder message;
     Double price;
-
-    public Double getPrice() {
-        return price;
-    }
-
     public SurplusStrategy(ProductModel productModel, PromoCodeModel promoCodeModel, StringBuilder message, Double price) {
         this.productModel = productModel;
         this.promoCodeModel = promoCodeModel;
